@@ -1,0 +1,41 @@
+{
+    "name": "tyhpdef/spatie-image-impl",
+    "description": "Implementation package for tyhpdef/spatie-image. Require tyhpdef/spatie-image, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "3.9.6.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/spatie-image"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "spatie/image": "3.9.6"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev"
+    }
+}
